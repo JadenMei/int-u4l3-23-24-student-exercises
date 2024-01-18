@@ -16,7 +16,12 @@ let scienceButton = document.querySelector(".science-button");
 
 englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
-
+    console.log(englishInput)
+    let englishmessage = document.querySelector(".english-message")
+    if (englishInput == "Mon")
+      englishmessage.innerHTML = "correct"
+      else
+      englishmessage.innerHTML = "wrong"
     // 2. Write an if-else conditional statement.
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
@@ -35,7 +40,12 @@ mathButton.addEventListener("click", function() {
     // NOTE: we treat numbers slightly different than strings.
     //  - We need to write 'Number' before the grabbed value. 
     let mathInput = Number(document.querySelector(".math").value);
-
+    console.log(mathInput)
+    let mathmessage = document.querySelector(".math-message")
+    if (mathInput == "30")
+      mathmessage.innerHTML = "correct"
+      else
+      mathmessage.innerHTML = "wrong"
     // 3. Write an if-else conditional statement.
     //  - Check if the value of the variable mathInput is correct.
     //  - The answer should be 30.
@@ -48,7 +58,12 @@ mathButton.addEventListener("click", function() {
 
 ssButton.addEventListener("click", function() {
     let ssInput = document.querySelector(".social-studies").value;
-
+    console.log(ssInput)
+    let ssmessage = document.querySelector(".ss-message")
+    if (ssInput == "Albany")
+      ssmessage.innerHTML = "correct"
+      else
+      ssmessage.innerHTML = "womp womp"
     // 4. Write an if-else conditional statement.
     //  - Check if the value of the variable ssInput is correct.
     //  - The answer should be "Albany".
@@ -61,6 +76,13 @@ ssButton.addEventListener("click", function() {
 
 
 scienceButton.addEventListener("click", function() {
+  let scienceInput = document.querySelector(".science").value;
+  console.log()
+  let sciencemessage = document.querySelector(".science-message")
+  if (scienceInput == "solid")
+    sciencemessage.innerHTML = "rockstar!"
+    else
+    sciencemessage.innerHTML = "sad, try again"
     // 5. Declare a variable that stores the value of the user input in the science section.
     //  - Look at previous lines of code to help you out.
 
